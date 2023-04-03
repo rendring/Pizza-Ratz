@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5668057452093487395}
   - component: {fileID: 5668057452093487394}
   - component: {fileID: 5668057452093487407}
+  - component: {fileID: 4445094986196703757}
   m_Layer: 0
   m_Name: HamsterBall
   m_TagString: Untagged
@@ -130,3 +131,17 @@ MonoBehaviour:
   speed: 5
   jumpForce: 30
   isOnGround: 1
+--- !u!114 &4445094986196703757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5668057452093487393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92d199a6d1dcf5f4b80d169794a072fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeathCall: {fileID: 5668057452093487393}
+  Death: 0

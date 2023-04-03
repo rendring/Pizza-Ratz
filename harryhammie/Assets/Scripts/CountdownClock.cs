@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class CountdownClock : MonoBehaviour
 {
-
     public bool Death = false;
     public float timer = 120;
     public TMP_Text TimerDisplayText;
@@ -15,6 +14,8 @@ public class CountdownClock : MonoBehaviour
  
     void Update()
     {
+
+ 
         if (timer > 0)
         {
             timer -= Time.deltaTime;
@@ -24,8 +25,9 @@ public class CountdownClock : MonoBehaviour
             timer = 0;
         }
         DisplayTimer(timer);
-        if(timer == 0)
+        if(timer <= 0)
         {
+           
             Death = true;
         }
         if (Death == true)

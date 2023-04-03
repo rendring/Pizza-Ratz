@@ -220,14 +220,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 060d38a5676f725428ecc64649590a40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Ball: {fileID: 431729987}
+  Ball: {fileID: 5668057452731342911}
   Offset: {x: 0, y: 2, z: -4}
---- !u!4 &431729987 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5668057452093487406, guid: 709f5a6016f0f2144add726bef142663,
-    type: 3}
-  m_PrefabInstance: {fileID: 705108241}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &682801112
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,7 +274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Death: 0
-  timer: 120
+  timer: 10
   TimerDisplayText: {fileID: 2123396753}
 --- !u!222 &682801116
 CanvasRenderer:
@@ -339,6 +333,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4445094986196703757, guid: 709f5a6016f0f2144add726bef142663,
+        type: 3}
+      propertyPath: DeathCall
+      value: 
+      objectReference: {fileID: 682801112}
     - target: {fileID: 5668057452093487393, guid: 709f5a6016f0f2144add726bef142663,
         type: 3}
       propertyPath: m_Name
@@ -899,3 +898,9 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2123396751}
   m_CullTransparentMesh: 1
+--- !u!4 &5668057452731342911 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5668057452093487406, guid: 709f5a6016f0f2144add726bef142663,
+    type: 3}
+  m_PrefabInstance: {fileID: 705108241}
+  m_PrefabAsset: {fileID: 0}
