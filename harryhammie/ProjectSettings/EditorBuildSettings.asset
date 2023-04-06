@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/MainMenuScene.unity
     guid: 090cf8e062eda9d43a9dcb747fadfe52
   - enabled: 1
+    path: Assets/Scenes/TestLevelBallGame.unity
+    guid: 58f883d95fa0c024f906ac753fe8c4c7
+  - enabled: 1
     path: Assets/harryHamster.unity
     guid: ef333b795a33a12409efacc04b5db5ac
   m_configObjects:
