@@ -20,6 +20,7 @@ public class NeedController : MonoBehaviour
     }
 
     //why its not reconising the TimeManager (ask Niels)
+    // 6/4/23: Ren H: changed private update to public, still unable to call variable in FeedScr
     private void Update()
     {
         if (gameHourTimer <= 0)
