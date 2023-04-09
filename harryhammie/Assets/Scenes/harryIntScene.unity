@@ -731,6 +731,7 @@ GameObject:
   - component: {fileID: 433659846}
   - component: {fileID: 433659848}
   - component: {fileID: 433659849}
+  - component: {fileID: 433659850}
   m_Layer: 5
   m_Name: HungerBar
   m_TagString: Untagged
@@ -826,6 +827,19 @@ MonoBehaviour:
   gameHourTime: 90
   hourLenght: 100
   timeSlider: {fileID: 433659848}
+--- !u!114 &433659850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433659845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 142ccaadc881d764e9c00681f0aefdca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 433659848}
 --- !u!1 &447169143
 GameObject:
   m_ObjectHideFlags: 0
@@ -1197,6 +1211,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 757059982}
   m_CullTransparentMesh: 1
+--- !u!1 &769875487 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2482309527633219604, guid: 2e4d9910b3030cd489cee4c891ca2b5a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1515921554}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &769875488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769875487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e309ca97b89eff4c84fe2f231dd828f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  food: 0
+  happiness: 0
+  hygiene: 0
+  foodTickRate: 0
+  happinessTickRate: 0
+  hygieneTickRate: 0
+  hourLenght: 0
 --- !u!1 &829432305
 GameObject:
   m_ObjectHideFlags: 0
@@ -1614,7 +1653,6 @@ GameObject:
   - component: {fileID: 1057980379}
   - component: {fileID: 1057980378}
   - component: {fileID: 1057980377}
-  - component: {fileID: 1057980376}
   m_Layer: 5
   m_Name: FeedButton
   m_TagString: Untagged
@@ -1643,19 +1681,6 @@ RectTransform:
   m_AnchoredPosition: {x: 168.33, y: 41}
   m_SizeDelta: {x: 120, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1057980376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1057980374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bc4b98bcc54f434b9047340943ee705, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Food: {fileID: 1390208644}
 --- !u!114 &1057980377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1699,7 +1724,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1057980378}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 433659850}
+        m_TargetAssemblyTypeName: hungerControl, Assembly-CSharp
+        m_MethodName: UpdateFeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1057980378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2023,31 +2060,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e4d9910b3030cd489cee4c891ca2b5a, type: 3}
---- !u!1 &1515921555 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2482309527633219604, guid: 2e4d9910b3030cd489cee4c891ca2b5a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1515921554}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1515921556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1515921555}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e309ca97b89eff4c84fe2f231dd828f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  food: 0
-  happiness: 0
-  hygiene: 0
-  foodTickRate: 0
-  happinessTickRate: 0
-  hygieneTickRate: 0
-  hourLenght: 0
 --- !u!1 &1518281273
 GameObject:
   m_ObjectHideFlags: 0

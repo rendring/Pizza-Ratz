@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class HungerBar : MonoBehaviour
 {
+    // Reducing hunger needs based on game
     public float gameHourTime;
-
     public float hourLenght;
     public Slider timeSlider;
     //public float gameHourTime;
