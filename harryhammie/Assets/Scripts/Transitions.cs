@@ -20,12 +20,13 @@ public class Transitions : MonoBehaviour
     {
         Death = DeathCall.GetComponent<CountdownClock>().Death;
 
-            if (Death == true)
-            {
-            if (Finishtag.CompareTag("LevelFinishedTag"))
+            if (DeathCall.GetComponent<CountdownClock>().ActualDeath == true)
             {
                 Finishtag.SetActive(true);
             }
+            if (Death == true)
+            {
+           
             DeathCall.SetActive(false);
             DeathCall2.SetActive(false);
 

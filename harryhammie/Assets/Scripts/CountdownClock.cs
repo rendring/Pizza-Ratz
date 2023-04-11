@@ -9,7 +9,7 @@ public class CountdownClock : MonoBehaviour
     public bool Death = false;
     public float timer = 120;
     public TMP_Text TimerDisplayText;
-   
+   public bool ActualDeath = false;
    
  
     void Update()
@@ -29,6 +29,7 @@ public class CountdownClock : MonoBehaviour
         {
            
             Death = true;
+            ActualDeath = true;
         }
         if (Death == true)
         {

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - LevelFinishedTag
+  - LevelSuccesTag
   layers:
   - Default
   - TransparentFX

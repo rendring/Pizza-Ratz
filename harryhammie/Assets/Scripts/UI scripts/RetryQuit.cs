@@ -8,7 +8,7 @@ public class RetryQuit : MonoBehaviour
 
     public void Quit()
     {
-        SceneManager.LoadScene("harryHamster");
+        SceneManager.LoadScene("harryIntScene");
     }
     public void Retry()
     {

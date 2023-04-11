@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+
+    public GameObject SuccesTag, DeathGrab;
     public float speed = 5.0f;
     public float jumpForce = 5.0f;
     public bool isOnGround = true;
@@ -64,6 +66,11 @@ public class Movement : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isOnGround = true;
+        }
+
+        if(collision.gameObject.CompareTag("LevelSuccesTag")){
+            DeathGrab.GetComponent<CountdownClock>().Death = true;
+            SuccesTag.SetActive(true);
         }
     }
 }
