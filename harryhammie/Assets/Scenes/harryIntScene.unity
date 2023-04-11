@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -731,6 +731,7 @@ GameObject:
   - component: {fileID: 433659846}
   - component: {fileID: 433659848}
   - component: {fileID: 433659849}
+  - component: {fileID: 433659850}
   m_Layer: 5
   m_Name: HungerBar
   m_TagString: Untagged
@@ -823,10 +824,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c0ca5a99c0747c4b9ea37799992ad2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AAA: {fileID: 1194493430}
   gameHourTime: 90
   hourLenght: 100
   timeSlider: {fileID: 433659848}
+--- !u!114 &433659850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433659845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 142ccaadc881d764e9c00681f0aefdca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 433659848}
 --- !u!1 &447169143
 GameObject:
   m_ObjectHideFlags: 0
@@ -1198,13 +1211,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 757059982}
   m_CullTransparentMesh: 1
+--- !u!1 &769875487 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2482309527633219604, guid: 2e4d9910b3030cd489cee4c891ca2b5a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1515921554}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &769875488
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2482309528612139142}
+  m_GameObject: {fileID: 769875487}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e309ca97b89eff4c84fe2f231dd828f, type: 3}
@@ -1492,7 +1511,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c0ca5a99c0747c4b9ea37799992ad2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AAA: {fileID: 1194493430}
   gameHourTime: 100
   hourLenght: 100
   timeSlider: {fileID: 894474204}
@@ -1707,7 +1725,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1194493435}
+      - m_Target: {fileID: 433659850}
         m_TargetAssemblyTypeName: hungerControl, Assembly-CSharp
         m_MethodName: UpdateFeed
         m_Mode: 1
@@ -1769,7 +1787,6 @@ GameObject:
   - component: {fileID: 1194493433}
   - component: {fileID: 1194493432}
   - component: {fileID: 1194493431}
-  - component: {fileID: 1194493435}
   m_Layer: 5
   m_Name: InteractionUI
   m_TagString: Untagged
@@ -1861,21 +1878,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1194493435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1194493430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 142ccaadc881d764e9c00681f0aefdca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HungerBarScript: {fileID: 433659845}
-  sliderH: {fileID: 433659848}
-  GameHourTimeH: 0
 --- !u!1 &1390208644
 GameObject:
   m_ObjectHideFlags: 0
@@ -2484,7 +2486,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c0ca5a99c0747c4b9ea37799992ad2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AAA: {fileID: 1194493430}
   gameHourTime: 120
   hourLenght: 10
   timeSlider: {fileID: 2130520749}
@@ -2539,9 +2540,3 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &2482309528612139142 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2482309527633219604, guid: 2e4d9910b3030cd489cee4c891ca2b5a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1515921554}
-  m_PrefabAsset: {fileID: 0}

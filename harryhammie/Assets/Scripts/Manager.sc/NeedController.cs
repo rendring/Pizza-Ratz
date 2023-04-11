@@ -7,16 +7,14 @@ using UnityEngine.UI;
 
 public class NeedController : MonoBehaviour
 {
-   
-
     // setting up the needs 
     public int food, happiness, hygiene;
     public int foodTickRate, happinessTickRate, hygieneTickRate;
     
     //setting up the timer for decreasing needs
-   
-    public float hourLenght;
     public static float gameHourTimer = 0f;
+    public float hourLenght;
+
 
     public void Initialize(int food, int happiness, int hygiene)
     {
