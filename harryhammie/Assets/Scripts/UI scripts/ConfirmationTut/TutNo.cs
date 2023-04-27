@@ -3,16 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class TutNo : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("Question");
+        SceneManager.LoadScene("harryIntScene");
     }
-    public void QuitGame()
-    {
-        Application.Quit();
-    }
+
 }
 
 

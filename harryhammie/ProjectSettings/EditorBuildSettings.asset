@@ -9,14 +9,23 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenuScene.unity
     guid: 090cf8e062eda9d43a9dcb747fadfe52
   - enabled: 1
-    path: Assets/Scenes/TestLevelBallGame.unity
-    guid: 58f883d95fa0c024f906ac753fe8c4c7
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+    path: Assets/Scenes/Tutorial scenes/Question.unity
+    guid: 52cc9cf2640819948bfdd52de1996ea9
+  - enabled: 1
+    path: Assets/Scenes/Tutorial scenes/Tutorial.unity
+    guid: 48d29b41a4062cf4b8b08e410645b663
+  - enabled: 1
+    path: Assets/Scenes/Tutorial scenes/Tutorial2.unity
+    guid: 441b483a25bc1954cbd90c86c5024aa4
+  - enabled: 1
+    path: Assets/Scenes/Tutorial scenes/Tutorial3.unity
+    guid: 146d4a7f7e7a18f4bb077a7d603b3781
   - enabled: 1
     path: Assets/Scenes/harryIntScene.unity
     guid: 4f0627dd306d3bb4698a631ad8b1d608
+  - enabled: 1
+    path: Assets/Scenes/TestLevelBallGame.unity
+    guid: 58f883d95fa0c024f906ac753fe8c4c7
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
       guid: 288b9dd3504781643b58fb5029190679, type: 2}
