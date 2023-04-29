@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestLevelBallGame.unity
     guid: 58f883d95fa0c024f906ac753fe8c4c7
+  - enabled: 1
+    path: Assets/Scenes/BathScene.unity
+    guid: 7882dda8d6092344e8e606489f43d769
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
       guid: 288b9dd3504781643b58fb5029190679, type: 2}
