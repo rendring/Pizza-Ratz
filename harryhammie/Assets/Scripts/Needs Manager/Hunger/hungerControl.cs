@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class hungerControl : MonoBehaviour
 {
-
-    public GameObject PlsFix;
+    // 7/5/23: Ren H- This will increase the hunger bar when feed btn is clicked (made by Christiaan)
+    public GameObject FeedInc;
     // 9/4/23- Ren H: setting up to change on btn click
     int feed = 0;
     public Slider slider;
@@ -14,7 +14,7 @@ public class hungerControl : MonoBehaviour
     
     public void UpdateFeed(){
         feed++;
-        PlsFix.GetComponent<HungerBar>().gameHourTime = PlsFix.GetComponent<HungerBar>().gameHourTime + feed;
+        FeedInc.GetComponent<HungerBar>().gameHourTime = FeedInc.GetComponent<HungerBar>().gameHourTime + feed;
     }
 
 }

@@ -807,7 +807,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 142ccaadc881d764e9c00681f0aefdca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlsFix: {fileID: 433659845}
+  FeedInc: {fileID: 433659845}
   slider: {fileID: 433659848}
 --- !u!1 &447169143
 GameObject:
@@ -2213,7 +2213,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1390208644}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 15, y: 127.08714, z: -176.32034}
+  m_LocalPosition: {x: -23.4, y: 70.5, z: -176.32034}
   m_LocalScale: {x: 26.682375, y: 26.682375, z: 26.682364}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2764,6 +2764,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2130520751}
+        m_TargetAssemblyTypeName: hygieneControl, Assembly-CSharp
+        m_MethodName: UpdateBath
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1543541212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3134,7 +3146,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2130520747}
   - component: {fileID: 2130520749}
-  - component: {fileID: 2130520748}
+  - component: {fileID: 2130520750}
+  - component: {fileID: 2130520751}
   m_Layer: 5
   m_Name: 'HygieneBar '
   m_TagString: Untagged
@@ -3164,21 +3177,6 @@ RectTransform:
   m_AnchoredPosition: {x: 65, y: 155}
   m_SizeDelta: {x: 145, y: 16}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2130520748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2130520746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c0ca5a99c0747c4b9ea37799992ad2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameHourTime: 120
-  hourLenght: 10
-  timeSlider: {fileID: 2130520749}
 --- !u!114 &2130520749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3230,3 +3228,32 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2130520750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130520746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3044c3833b98e34e95e8700478ee384, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameHourTime: 120
+  hourLenght: 100
+  timeSlider: {fileID: 2130520749}
+--- !u!114 &2130520751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130520746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f27a846fe4abbda4db0b20d240684861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HygieneInc: {fileID: 2130520746}
+  slider: {fileID: 2130520749}

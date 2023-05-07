@@ -3,20 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HungerBar : MonoBehaviour
+public class HygieneBar : MonoBehaviour
 {
-    // Reducing hunger needs based on game
+    // 7/5/23: Ren H- Reducing Hygiene needs based on game time
+    // 7/5/23: Ren H- the following variables com from the Time Manager Script
     public float gameHourTime;
     public float hourLenght;
     public Slider timeSlider;
-    //public float gameHourTime;
-
-   // private bool stopTimer;
 
     void Start()
     {
-        //stopTimer = false;
-       // timeSlider.maxValue = gameHourTime;
         timeSlider.value = gameHourTime;
     }
 
