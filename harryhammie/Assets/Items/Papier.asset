@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ec2cbc26e3ed6544b49680d3689bb6c, type: 3}
-  m_Name: ToilerPaper
+  m_Name: Papier
   m_EditorClassIdentifier: 
-  id: 0
-  itemName: 
-  value: 0
+  id: 1
+  itemName: Papier
+  value: 5
   icon: {fileID: 0}
