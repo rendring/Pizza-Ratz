@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 
 public class InventoryManager : MonoBehaviour
@@ -11,39 +12,47 @@ public class InventoryManager : MonoBehaviour
     public List <Item> Items = new List <Item>(); 
 
     public Transform ItemContent;
-    public GameObject InventoryItem;
+    public GameObject itemPrefab;
 
 
-    public void Awake(){
+    public void Awake()
+    {
         Instance = this;
-
     }
 
-    public void Add (Item item){
+    public void Add (Item item)
+    {
+        // Add item to the list
         Items.Add(item);
+
+        // Add UI representation of the item
+        GameObject itemClone = Instantiate (itemPrefab, ItemContent);
+        //Debug.Log($"{item.name}");
+        itemClone.transform.GetChild(0).transform.GetComponent<TextMeshProUGUI>().text = item.name;
+        itemClone.transform.GetChild(1).GetComponent<Image>().sprite = item.icon;    
     }
 
-    public void Remove (Item item){
+    public void Remove (Item item)
+    {
 
         Items.Remove(item);
     }
 
-
-    public void ListItems(){
-
-foreach (Transform item in ItemContent)
-{
-    Destroy(item.gameObject);
-}
-    
-    foreach (var item in Items)
+    public void ListItems()
     {
-        GameObject obj = Instantiate (InventoryItem, ItemContent);
-        var itemName = obj.transform.Find("Items/ItemName").GetComponent<Text>();
-        var itemIcon = obj.transform.Find("Items/Icon").GetComponent<Image>();
+        foreach (Transform item in ItemContent) 
+        {
+            Destroy(item.gameObject);
+        }
+        
+        foreach (var item in Items)
+        {
+            GameObject obj = Instantiate (itemPrefab, ItemContent);
+            var itemName = obj.transform.Find("Items/ItemName").GetComponent<TextMeshProUGUI>();
+            var itemIcon = obj.transform.Find("Items/Icon").GetComponent<Image>();
 
-        itemName.text = item.itemName;
-        itemIcon.sprite = item.icon;
-    }
+            itemName.text = item.itemName;
+            itemIcon.sprite = item.icon;
+        }
     }
 }
