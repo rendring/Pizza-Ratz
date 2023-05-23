@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/harryIntScene.unity
     guid: 4f0627dd306d3bb4698a631ad8b1d608
   - enabled: 1
-    path: Assets/Scenes/TestLevelBallGame.unity
+    path: Assets/Scenes/Test level Gracjan.unity
     guid: 58f883d95fa0c024f906ac753fe8c4c7
   - enabled: 1
     path: Assets/Scenes/BathScene.unity
