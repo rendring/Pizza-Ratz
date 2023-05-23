@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -747,11 +747,21 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 78a0830d9d74f4e41bbbc7032c6292d4, type: 2}
+    - target: {fileID: 2482309528834657467, guid: 2e4d9910b3030cd489cee4c891ca2b5a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2482309529398493529, guid: 2e4d9910b3030cd489cee4c891ca2b5a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 78a0830d9d74f4e41bbbc7032c6292d4, type: 2}
+    - target: {fileID: 2482309529398493530, guid: 2e4d9910b3030cd489cee4c891ca2b5a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e4d9910b3030cd489cee4c891ca2b5a, type: 3}
 --- !u!1 &887818755 stripped
@@ -2249,6 +2259,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8488776172828990375}
   - component: {fileID: 4846846441447139408}
+  - component: {fileID: 9000208317057239574}
   m_Layer: 0
   m_Name: Xavi attempt 3
   m_TagString: Untagged
@@ -2256,6 +2267,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!136 &9000208317057239574
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9000208317057239573}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 3.2987278
+  m_Height: 8.059956
+  m_Direction: 1
+  m_Center: {x: 0.16167833, y: -1.9512514, z: -0.9240953}
 --- !u!1 &9127099060068821342
 GameObject:
   m_ObjectHideFlags: 0
