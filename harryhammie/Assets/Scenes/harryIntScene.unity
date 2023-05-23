@@ -2503,7 +2503,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Items: []
   ItemContent: {fileID: 1079404495}
-  InventoryItem: {fileID: 4254203213155561880, guid: 5bc3f08670c30b645a9a85af9d8521fe,
+  itemPrefab: {fileID: 4254203213155561880, guid: 5bc3f08670c30b645a9a85af9d8521fe,
     type: 3}
 --- !u!4 &1093646921
 Transform:
