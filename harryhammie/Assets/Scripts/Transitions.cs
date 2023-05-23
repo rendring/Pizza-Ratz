@@ -27,7 +27,7 @@ public class Transitions : MonoBehaviour
             if (Death == true)
             {
            
-            DeathCall.SetActive(false);
+            
             DeathCall2.SetActive(false);
 
         }

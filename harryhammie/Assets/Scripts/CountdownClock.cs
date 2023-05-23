@@ -10,35 +10,40 @@ public class CountdownClock : MonoBehaviour
     public float timer = 120;
     public TMP_Text TimerDisplayText;
    public bool ActualDeath = false;
-   
- 
+
+
     void Update()
     {
 
- 
-        if (timer > 0)
+
+        //Changed this so it only activated when Death == false so that the score can be calculated in the Scores script -Christiaan 23-05
+        if (Death == false)
         {
-            timer -= Time.deltaTime;
+
+            if (timer > 0)
+            {
+                timer -= Time.deltaTime;
+            }
+            else
+            {
+                timer = 0;
+            }
+            DisplayTimer(timer);
         }
-        else
+        if (timer <= 0)
         {
-            timer = 0;
-        }
-        DisplayTimer(timer);
-        if(timer <= 0)
-        {
-           
+
             Death = true;
             ActualDeath = true;
         }
         if (Death == true)
         {
-            gameObject.SetActive(false);
-        }
 
+
+        }
     }
 
-    void DisplayTimer(float TimeToDisplay)
+        void DisplayTimer(float TimeToDisplay)
     {
         if(TimeToDisplay < 0)
         {

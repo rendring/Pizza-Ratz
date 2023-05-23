@@ -12,6 +12,6 @@ public class RetryQuit : MonoBehaviour
     }
     public void Retry()
     {
-        SceneManager.LoadScene("TestLevelBallGame");
+        SceneManager.LoadScene("Level test");
     }
 }
