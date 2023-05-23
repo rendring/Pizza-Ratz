@@ -131,7 +131,6 @@ MonoBehaviour:
   speed: 5
   jumpForce: 30
   isOnGround: 1
-  cam: {fileID: 0}
 --- !u!114 &4445094986196703757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,6 +144,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DeathCall: {fileID: 5668057452093487393}
-  DeathCall2: {fileID: 0}
-  Finishtag: {fileID: 0}
   Death: 0
