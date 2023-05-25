@@ -16,5 +16,7 @@ public class hungerControl : MonoBehaviour
         feed++;
         FeedInc.GetComponent<HungerBar>().gameHourTime = FeedInc.GetComponent<HungerBar>().gameHourTime + feed;
     }
-
+    public void Hide() {
+        Destroy(gameObject);
+    }
 }
