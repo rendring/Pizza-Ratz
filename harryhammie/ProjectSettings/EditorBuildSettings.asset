@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tutorial scenes/Tutorial3.unity
     guid: 146d4a7f7e7a18f4bb077a7d603b3781
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/harryIntScene.unity
     guid: 4f0627dd306d3bb4698a631ad8b1d608
   - enabled: 1
@@ -32,6 +32,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level test.unity
     guid: 7911c08d8cd5910409fbda710fb5b6ff
+  - enabled: 1
+    path: Assets/Scenes/harryIntScene levle 2.unity
+    guid: e5ebcc2620f7a6847866c88c7fe5d681
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
       guid: 288b9dd3504781643b58fb5029190679, type: 2}

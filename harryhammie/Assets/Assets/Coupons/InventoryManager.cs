@@ -5,15 +5,14 @@ using UnityEngine.UI;
 using TMPro;
 
 
-public class InventoryManager : MonoBehaviour
+public class InventoryManager : MonoBehaviour, ISerializationCallbackReceiver //this also does not work yet
 {
-
+    public InventoryDatabase Database; //this i added (xavi) it does not work yet
     public static InventoryManager Instance;
     public List <Item> Items = new List <Item>(); 
-
     public Transform ItemContent;
     public GameObject itemPrefab;
-
+   
 
     public void Awake()
     {
@@ -29,7 +28,8 @@ public class InventoryManager : MonoBehaviour
         GameObject itemClone = Instantiate (itemPrefab, ItemContent);
         //Debug.Log($"{item.name}");
         itemClone.transform.GetChild(0).transform.GetComponent<TextMeshProUGUI>().text = item.name;
-        itemClone.transform.GetChild(1).GetComponent<Image>().sprite = item.icon;    
+        itemClone.transform.GetChild(1).GetComponent<Image>().sprite = item.icon;
+        
     }
 
     public void Remove (Item item)
@@ -54,5 +54,15 @@ public class InventoryManager : MonoBehaviour
             itemName.text = item.itemName;
             itemIcon.sprite = item.icon;
         }
+    }
+
+    public void OnBeforeSerialize()
+    {
+        
+    }
+
+    public void OnAfterDeserialize()//this does not work yet
+    {
+        
     }
 }
