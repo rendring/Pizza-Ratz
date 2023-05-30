@@ -10,18 +10,13 @@ public class hungerControl : MonoBehaviour
     // 9/4/23- Ren H: setting up to change on btn click
     int feed = 0;
     public Slider slider;
-
-    //24-05- C: Have to add a boolean so I can detect when the function gets activated
-    public bool FeedActive = false;
     
     
     public void UpdateFeed(){
         feed++;
         FeedInc.GetComponent<HungerBar>().gameHourTime = FeedInc.GetComponent<HungerBar>().gameHourTime + feed;
-
-        
-        FeedActive = true;
-       
     }
-
+    public void Hide() {
+        Destroy(gameObject);
+    }
 }
