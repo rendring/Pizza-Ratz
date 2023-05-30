@@ -10,6 +10,7 @@ public class HungerBar : MonoBehaviour
     public float gameHourTime;
     public float hourLenght;
     public Slider timeSlider;
+
     //public float gameHourTime;
 
    // private bool stopTimer;
@@ -28,6 +29,7 @@ public class HungerBar : MonoBehaviour
 
         gameHourTime -= Time.deltaTime;
         timeSlider.value = gameHourTime;
+     
 
         int minutes = Mathf.FloorToInt(time / 60);
         int seconds = Mathf.FloorToInt(time - minutes * 60f);
