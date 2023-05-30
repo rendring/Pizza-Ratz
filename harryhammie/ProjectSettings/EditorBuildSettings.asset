@@ -30,14 +30,8 @@ EditorBuildSettings:
     path: Assets/Scenes/BathScene.unity
     guid: 7882dda8d6092344e8e606489f43d769
   - enabled: 1
-    path: Assets/Scenes/Level test equipment.unity
+    path: Assets/Scenes/Level test.unity
     guid: 7911c08d8cd5910409fbda710fb5b6ff
-  - enabled: 1
-    path: Assets/Scenes/Scene1.unity
-    guid: 64ee91a2e9946db43a1c6c16a434d5ac
-  - enabled: 1
-    path: Assets/Scenes/Scene2.unity
-    guid: 1c414904a0dade74aba895c489f000aa
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
       guid: 288b9dd3504781643b58fb5029190679, type: 2}
