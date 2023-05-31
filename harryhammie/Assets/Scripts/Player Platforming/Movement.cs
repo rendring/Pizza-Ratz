@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Movement : MonoBehaviour
 {
@@ -16,8 +17,10 @@ public class Movement : MonoBehaviour
     private Rigidbody playerRb;
     private float horInput = 0;
     private float verInput = 0;
+    private Vector3 SpawnPosition;
     void Start()
     {
+        SpawnPosition = gameObject.transform.position;
         playerRb = GetComponent<Rigidbody>();
         
     }
@@ -66,6 +69,11 @@ public class Movement : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isOnGround = true;
+        }
+        if (collision.gameObject.CompareTag("Death"))
+        {
+
+            gameObject.transform.position = SpawnPosition;
         }
 
         if(collision.gameObject.CompareTag("LevelSuccesTag")){
