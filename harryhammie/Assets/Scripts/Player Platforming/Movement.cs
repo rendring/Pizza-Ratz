@@ -5,9 +5,9 @@ using UnityEngine.UIElements;
 
 public class Movement : MonoBehaviour
 {
-
+    public Joystick joystick;
     public GameObject SuccesTag, DeathGrab;
-    public float speed = 5.0f;
+    public float speed = 7.0f;
     public float jumpForce = 5.0f;
     public bool isOnGround = true;
     //I(Xavi) added this public value so it might cause errors as it is from a different tutorial
@@ -31,8 +31,8 @@ public class Movement : MonoBehaviour
         //Player input
         // horizontalInput = Input.GetAxis("Horizontal");
         //forwardInput = Input.GetAxis("Vertical");
-        horInput = Input.GetAxis("Horizontal");
-        verInput = Input.GetAxis("Vertical");
+        horInput = joystick.Horizontal;
+        verInput = joystick.Vertical;
 
         
 
