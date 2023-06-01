@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Tutorial scenes/Question.unity
     guid: 52cc9cf2640819948bfdd52de1996ea9
@@ -27,14 +24,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Tutorial scenes/Tutorial5.unity
     guid: c1aad2d23c5bdf74d93759ec2865d314
   - enabled: 1
-    path: Assets/Scenes/Tutorial scenes/Tutorial6.unity
-    guid: c8a93977a322aee4a9400b6861c27fe4
-  - enabled: 1
     path: Assets/Scenes/Tutorial scenes/Tutorial Last.unity
     guid: 146d4a7f7e7a18f4bb077a7d603b3781
   - enabled: 1
-    path: Assets/Scenes/harryIntScene.unity
-    guid: 4f0627dd306d3bb4698a631ad8b1d608
+    path: Assets/Scenes/Main.unity
+    guid: 2c36e04a94ad008498ed13f08d3086e7
   - enabled: 1
     path: Assets/Scenes/Test level Gracjan.unity
     guid: 58f883d95fa0c024f906ac753fe8c4c7

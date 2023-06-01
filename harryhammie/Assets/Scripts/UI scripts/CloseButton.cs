@@ -7,7 +7,7 @@ public class CloseButton : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("harryIntScene");
+        SceneManager.LoadScene("Main");
     }
     
 }
