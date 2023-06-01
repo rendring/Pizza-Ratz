@@ -8,6 +8,7 @@ TagManager:
   - LevelFinishedTag
   - LevelSuccesTag
   - Death
+  - Koopzegel
   layers:
   - Default
   - TransparentFX

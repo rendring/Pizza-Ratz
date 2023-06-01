@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: VariableInfo
   m_EditorClassIdentifier: 
   SuperAwesomeHighScore: 0
+  SuperDuperAwesomeHighScore: 0
   CouponBarProgression: 0

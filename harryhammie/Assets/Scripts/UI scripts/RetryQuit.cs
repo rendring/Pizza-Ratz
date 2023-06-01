@@ -6,12 +6,27 @@ using UnityEngine.SceneManagement;
 public class RetryQuit : MonoBehaviour
 {
 
+    Scene currentScene;
+
+    void Start()
+    {
+        currentScene = SceneManager.GetActiveScene();
+    }
     public void Quit()
     {
-        SceneManager.LoadScene("harryIntScene");
+        SceneManager.LoadScene("Main");
     }
     public void Retry()
     {
-        SceneManager.LoadScene("Level test");
+
+        if (currentScene.name == "Level test")
+        {
+            SceneManager.LoadScene("Level test");
+        }
+
+        if (currentScene.name == "Test level Gracjan")
+        {
+            SceneManager.LoadScene("Test level Gracjan");
+        }
     }
 }

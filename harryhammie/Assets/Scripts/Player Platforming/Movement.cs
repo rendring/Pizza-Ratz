@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 public class Movement : MonoBehaviour
 {
 
-    public GameObject SuccesTag, DeathGrab;
+    public GameObject SuccesTag, DeathGrab, KoopzegelScores, Koopzegels;
     public float speed = 5.0f;
     public float jumpForce = 5.0f;
     public bool isOnGround = true;
@@ -76,9 +76,25 @@ public class Movement : MonoBehaviour
             gameObject.transform.position = SpawnPosition;
         }
 
+       
+      
+      
+       
+       
+
         if(collision.gameObject.CompareTag("LevelSuccesTag")){
             DeathGrab.GetComponent<CountdownClock>().Death = true;
             SuccesTag.SetActive(true);
+        }
+    }
+
+    //Here so the ball doesn't slow down when collecting the koopzegels -C 01-06
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.transform.tag == "Koopzegel")
+        {
+            Destroy(other.gameObject);
+            KoopzegelScores.GetComponent<Scores>().KoopzegelScore = KoopzegelScores.GetComponent<Scores>().KoopzegelScore + 10;
         }
     }
 }

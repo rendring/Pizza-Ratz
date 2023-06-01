@@ -7,6 +7,8 @@ public class PermaStates : ScriptableObject
 {
     public float SuperAwesomeHighScore;
 
+    public float SuperDuperAwesomeHighScore;
+
     public float CouponBarProgression;
 
 

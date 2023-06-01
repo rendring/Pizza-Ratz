@@ -1,7 +1,10 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Leaderboard : MonoBehaviour
 {
@@ -10,22 +13,55 @@ public class Leaderboard : MonoBehaviour
     public TMP_Text ShadowHarry, Garf, GarfB, Shmeeg, Plorgladle;
     public GameObject SHpos, GarfPos, GarfBPos, ShmeegPos, PlorgladlePos;
     public PermaStates HighScore;
-    private int SHScore = 650;
-    private int GarfScore = 550;
-    private int GarfBScore = 450;
-    private int ShmeegScore = 300;
-    private int PlorgladleScore = 200;
-    private float PlayerScore;
 
-  
+    Scene currentScene; 
+    private int SHScore;
+    private int GarfScore;
+    private int GarfBScore;
+    private int ShmeegScore;
+    private int PlorgladleScore;
+    private float PlayerScore;
+    private string SceneName;
+
     void Start()
     {
-        PlayerScore = HighScore.SuperAwesomeHighScore;
+        currentScene = SceneManager.GetActiveScene();
+        SceneName = currentScene.name;
+
+
+        if (SceneName == "Level test")
+        {
+            PlayerScore = HighScore.SuperAwesomeHighScore;
+        }
+
+        if (SceneName == "Test level Gracjan")
+        {
+            PlayerScore = HighScore.SuperDuperAwesomeHighScore;
+        }
     }
 
 
     void Update()
     {
+        if (SceneName == "Level test")
+        {
+            SHScore = 650;
+            GarfScore = 550;
+            GarfBScore = 450;
+            ShmeegScore = 300;
+            PlorgladleScore = 200;
+        }
+
+        if (SceneName == "Test level Gracjan")
+        {
+            SHScore = 1800;
+            GarfScore = 1700;
+            GarfBScore = 1500;
+            ShmeegScore = 1100;
+            PlorgladleScore = 900;
+
+
+        }
         ShadowHarry.text = string.Format("Shadow Harry: {0}", SHScore);
         Garf.text = string.Format("Garf: {0}", GarfScore);
         GarfB.text = string.Format("Garf's brother: {0}", GarfBScore);
@@ -58,7 +94,7 @@ public class Leaderboard : MonoBehaviour
 
         if (PlayerScore >= SHScore)
         {
-            GarfB.text = string.Format("Player: {0}", PlayerScore);
+            ShadowHarry.text = string.Format("Player: {0}", PlayerScore);
         }
 
        
