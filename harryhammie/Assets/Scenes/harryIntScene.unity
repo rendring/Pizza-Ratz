@@ -2513,6 +2513,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46b9215457102f74f932b10205b47877, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Item: {fileID: 0}
   Items: []
   ItemContent: {fileID: 1079404495}
   itemPrefab: {fileID: 4254203213155561880, guid: 5bc3f08670c30b645a9a85af9d8521fe,
@@ -3252,7 +3253,7 @@ PrefabInstance:
     - target: {fileID: 2482309527633219604, guid: 2e4d9910b3030cd489cee4c891ca2b5a,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2482309527633219605, guid: 2e4d9910b3030cd489cee4c891ca2b5a,
         type: 3}

@@ -8,11 +8,11 @@ using UnityEngine.UIElements;
 public class Item : ScriptableObject
 
 {
-    public InventoryDatabase database;//does not work yet
+    
     public int id;
     public string itemName;
     public int value;
     public Sprite icon;
-
-  
+    public int itemIsPickedUp = 0;
+    
 }
