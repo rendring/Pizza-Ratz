@@ -200,7 +200,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 94612263}
-  m_LocalRotation: {x: 0.28873765, y: 0.000000028532993, z: -0.000000008605054, w: 0.95740825}
+  m_LocalRotation: {x: 0.2887376, y: 0.000000041883293, z: -0.0000000126312685, w: 0.9574083}
   m_LocalPosition: {x: 0, y: 42.87, z: -45.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1215,7 +1215,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 632942356}
-  m_LocalRotation: {x: 0.28873762, y: 3e-45, z: -1e-45, w: 0.9574083}
+  m_LocalRotation: {x: 0.28873757, y: 0.000000030660697, z: -0.000000009246729, w: 0.9574083}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3600,7 +3600,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1494636827}
-  m_LocalRotation: {x: 0.3061046, y: -0.000000016380438, z: 0.0000000052669527, w: 0.9519979}
+  m_LocalRotation: {x: 0.3061046, y: 0.000000016380438, z: -0.0000000052669527, w: 0.9519979}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3896,6 +3896,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1568004136}
   - component: {fileID: 1568004135}
+  - component: {fileID: 1568004138}
   - component: {fileID: 1568004137}
   m_Layer: 0
   m_Name: ThirdPersonCamera
@@ -3945,7 +3946,7 @@ MonoBehaviour:
   m_YAxis:
     Value: 0.5
     m_SpeedMode: 0
-    m_MaxSpeed: 2
+    m_MaxSpeed: 0
     m_AccelTime: 0.2
     m_DecelTime: 0.1
     m_InputAxisName: 
@@ -3969,10 +3970,10 @@ MonoBehaviour:
   m_XAxis:
     Value: 0
     m_SpeedMode: 0
-    m_MaxSpeed: 150
+    m_MaxSpeed: 100
     m_AccelTime: 0.2
     m_DecelTime: 0.1
-    m_InputAxisName: HorInput
+    m_InputAxisName: Horizontal
     m_InputAxisValue: 0
     m_InvertInput: 0
     m_MinValue: -180
@@ -4036,10 +4037,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1568004134}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04b185d6b92236b468337d4f6edf10a3, type: 3}
+  m_Script: {fileID: 11500000, guid: fb7194dc27b9df64c8beca7482ee8e0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  joystick: {fileID: 1406324959}
+  PlayerIndex: -1
+  AutoEnableInputs: 1
+  XYAxis: {fileID: -7529786935585965202, guid: 0cedb3819fefa1347b7889d559ade2e2, type: 3}
+  ZAxis: {fileID: 0}
+--- !u!114 &1568004138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568004134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 729aad4491e915a41bda2b8325cf757a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1579223483
 GameObject:
   m_ObjectHideFlags: 0
@@ -5017,6 +5033,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1890032640 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2929252285020697097, guid: aaa2c939c0359ac4dbce3f49e8b90252,
+    type: 3}
+  m_PrefabInstance: {fileID: 783651942}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1890032644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890032640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d677f1681015749b15c436eec6d880, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MovementRange: 100
+  m_ControlPath: <Gamepad>/leftStick
 --- !u!1 &1948050856
 GameObject:
   m_ObjectHideFlags: 0

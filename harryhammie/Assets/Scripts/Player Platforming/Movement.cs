@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 
 public class Movement : MonoBehaviour
 {
-    public Joystick joystick;
+   
+    public PlayerInput playerInput;
     public GameObject SuccesTag, DeathGrab;
     public float speed = 7.0f;
     public float jumpForce = 5.0f;
@@ -31,10 +34,13 @@ public class Movement : MonoBehaviour
         //Player input
         // horizontalInput = Input.GetAxis("Horizontal");
         //forwardInput = Input.GetAxis("Vertical");
-        horInput = joystick.Horizontal;
-        verInput = joystick.Vertical;
-
+        Vector2 input = playerInput.actions["JoystickLook"].ReadValue<Vector2>();
         
+
+        horInput = input.x;
+        verInput = input.y;
+
+
 
 
         //Moving the player
