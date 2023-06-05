@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class RetryQuit : MonoBehaviour
-{
-
+{ 
     Scene currentScene;
 
     void Start()
@@ -19,14 +18,14 @@ public class RetryQuit : MonoBehaviour
     public void Retry()
     {
 
-        if (currentScene.name == "Level test")
+        if (currentScene.name == "Level2")
         {
-            SceneManager.LoadScene("Level test");
+            SceneManager.LoadScene("Level2");
         }
 
-        if (currentScene.name == "Test level Gracjan")
+        if (currentScene.name == "Level1")
         {
-            SceneManager.LoadScene("Test level Gracjan");
+            SceneManager.LoadScene("Level1");
         }
     }
 }
