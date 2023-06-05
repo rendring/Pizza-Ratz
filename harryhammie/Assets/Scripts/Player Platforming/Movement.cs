@@ -63,7 +63,7 @@ public class Movement : MonoBehaviour
 
         playerRb.AddForce(new Vector3(moveDir.x, 0f, moveDir.z) * speed);
         //boing boing
-        if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
+        if (playerInput.actions["Jump"].IsPressed() && isOnGround)
         {
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isOnGround = false;
