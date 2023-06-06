@@ -9,7 +9,7 @@ public class Movement : MonoBehaviour
 {
    
     public PlayerInput playerInput;
-    public GameObject SuccesTag, DeathGrab;
+    public GameObject SuccesTag, DeathGrab, KoopzegelScores;
     public float speed = 7.0f;
     public float jumpForce = 5.0f;
     public bool isOnGround = true;
