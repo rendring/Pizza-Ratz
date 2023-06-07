@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 
 public class Movement : MonoBehaviour
 {
-
-    public GameObject SuccesTag, DeathGrab, KoopzegelScores, Koopzegels;
-    public float speed = 5.0f;
+   
+    public PlayerInput playerInput;
+    public GameObject SuccesTag, DeathGrab, KoopzegelScores;
+    public float speed = 7.0f;
     public float jumpForce = 5.0f;
     public bool isOnGround = true;
     //I(Xavi) added this public value so it might cause errors as it is from a different tutorial
@@ -31,10 +34,13 @@ public class Movement : MonoBehaviour
         //Player input
         // horizontalInput = Input.GetAxis("Horizontal");
         //forwardInput = Input.GetAxis("Vertical");
-        horInput = Input.GetAxis("Horizontal");
-        verInput = Input.GetAxis("Vertical");
-
+        Vector2 input = playerInput.actions["JoystickLook"].ReadValue<Vector2>();
         
+
+        horInput = input.x;
+        verInput = input.y;
+
+
 
 
         //Moving the player
@@ -57,7 +63,7 @@ public class Movement : MonoBehaviour
 
         playerRb.AddForce(new Vector3(moveDir.x, 0f, moveDir.z) * speed);
         //boing boing
-        if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
+        if (playerInput.actions["Jump"].IsPressed() && isOnGround)
         {
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isOnGround = false;
