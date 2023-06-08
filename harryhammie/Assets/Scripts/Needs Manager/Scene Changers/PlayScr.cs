@@ -9,6 +9,6 @@ public class PlayScr : MonoBehaviour
 {
     // 6/4/23: Ren H- Play btn / move to game
     public void MovetoGame(string sceneID){
-        SceneManager.LoadScene("Test level Gracjan");
+        SceneManager.LoadScene("Level1");
     }
 }
