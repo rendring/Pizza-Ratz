@@ -20,9 +20,6 @@ public class FeedScr : MonoBehaviour
         if(foodEnabled == true){
             Food.SetActive(true);
             foodEnabled = false;
-        } else if(foodEnabled == false){
-            Food.SetActive(false);
-            foodEnabled = true;
         }
     }
 }
