@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class ClickFood : MonoBehaviour
 {
-    private void OnMouseUpAsButton()
-    {
+    private void OnMouseDown(){
         Debug.Log("Harry is eating");
     }
 }
