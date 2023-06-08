@@ -19,9 +19,9 @@ public class RetryQuit : MonoBehaviour
     public void Retry()
     {
 
-        if (currentScene.name == "Level test")
+        if (currentScene.name == "Level1")
         {
-            SceneManager.LoadScene("Level test");
+            SceneManager.LoadScene("Level1");
         }
 
         if (currentScene.name == "Test level Gracjan")
