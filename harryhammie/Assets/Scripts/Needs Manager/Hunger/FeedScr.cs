@@ -20,9 +20,6 @@ public class FeedScr : MonoBehaviour
         if(foodEnabled == true){
             Food.SetActive(true);
             foodEnabled = false;
-        } else if(foodEnabled == false){
-            Food.SetActive(false);
-            foodEnabled = true;
-        }
+        } // 8/6/23: Ren H- Else if for Food.SetActive(false); has been moved to clickfood script
     }
 }
