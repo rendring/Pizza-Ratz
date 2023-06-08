@@ -229,6 +229,8 @@ GameObject:
   - component: {fileID: 197793840}
   - component: {fileID: 197793839}
   - component: {fileID: 197793838}
+  - component: {fileID: 197793843}
+  - component: {fileID: 197793842}
   m_Layer: 5
   m_Name: Tutorial
   m_TagString: Untagged
@@ -319,6 +321,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &197793842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197793837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4abdb4eb759dfd84f8dd1c47576ca451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &197793843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197793837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94555b00a0ab3a142a07a1c7d889a106, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &701059040
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,7 +450,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 701059042}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1810587739}
+        m_TargetAssemblyTypeName: ArrowRight, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &701059044
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -538,7 +576,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 970788484}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1810587738}
+        m_TargetAssemblyTypeName: ArrowLeft, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &970788486
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -708,6 +758,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1810587737}
+  - component: {fileID: 1810587738}
+  - component: {fileID: 1810587739}
   m_Layer: 5
   m_Name: Buttons
   m_TagString: Untagged
@@ -737,6 +789,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1810587738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810587736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e74ce67cf0f6de418ca55e5895612bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1810587739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810587736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f086fbce0eba1004ba107adfc6b90dd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1897317952
 GameObject:
   m_ObjectHideFlags: 0

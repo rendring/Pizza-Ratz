@@ -7,7 +7,7 @@ public class TutYes : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadScene("Tutorial1");
     }
 
 }
