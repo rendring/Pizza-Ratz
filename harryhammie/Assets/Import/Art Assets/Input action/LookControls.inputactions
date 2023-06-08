@@ -1,0 +1,60 @@
+{
+    "name": "LookControls",
+    "maps": [
+        {
+            "name": "Joystick",
+            "id": "985820e6-2cba-49b8-b0e3-0ed72f0e1336",
+            "actions": [
+                {
+                    "name": "JoystickLook",
+                    "type": "PassThrough",
+                    "id": "662cd43f-c98d-467a-ae7c-abe1bc5ac545",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "1e89a794-b03a-4451-87ec-7760ec663517",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "25470600-0360-44a7-85ee-86fcc4962745",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JoystickLook",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5ab2c8a0-1c1a-4589-9889-fa8a15918f22",
+                    "path": "<Touchscreen>/primaryTouch/tap",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "JumpButton",
+            "id": "2fcd7f2b-dc73-4620-88a2-9800a3853073",
+            "actions": [],
+            "bindings": []
+        }
+    ],
+    "controlSchemes": []
+}

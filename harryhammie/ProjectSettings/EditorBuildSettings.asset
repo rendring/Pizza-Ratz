@@ -5,39 +5,63 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tutorial scenes/Question.unity
     guid: 52cc9cf2640819948bfdd52de1996ea9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tutorial scenes/Tutorial.unity
     guid: 48d29b41a4062cf4b8b08e410645b663
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tutorial scenes/Tutorial2.unity
     guid: 441b483a25bc1954cbd90c86c5024aa4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tutorial scenes/Tutorial3.unity
     guid: b1cdd391cd913b44081efd040ce310d6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tutorial scenes/Tutorial4.unity
     guid: 598887e7cf9db71459a10c92fa556403
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tutorial scenes/Tutorial5.unity
     guid: c1aad2d23c5bdf74d93759ec2865d314
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tutorial scenes/Tutorial Last.unity
     guid: 146d4a7f7e7a18f4bb077a7d603b3781
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 2c36e04a94ad008498ed13f08d3086e7
   - enabled: 1
-    path: Assets/Scenes/Platforming/Level1.unity
+    path: Assets/Scenes/Test level Gracjan.unity
     guid: 58f883d95fa0c024f906ac753fe8c4c7
   - enabled: 1
     path: Assets/Scenes/BathScene.unity
     guid: 7882dda8d6092344e8e606489f43d769
   - enabled: 1
-    path: Assets/Scenes/Platforming/Level2.unity
+    path: Assets/Scenes/Level test.unity
     guid: 7911c08d8cd5910409fbda710fb5b6ff
+  - enabled: 1
+    path: Assets/Scenes/Load.unity
+    guid: e2ac2551f07fdd24dbb55b9c1debbafd
+  - enabled: 1
+    path: Assets/Scenes/Tutorial/TutorialStart.unity
+    guid: d1576c507779c8e44adcea835c81689e
+  - enabled: 1
+    path: Assets/Scenes/Tutorial/Tutorial1.unity
+    guid: 25e2b8043ad2ff54886d4caa8a572e63
+  - enabled: 1
+    path: Assets/Scenes/Tutorial/Tutorial2.unity
+    guid: 9ac8af4cd74ddfe4db6e0ba6c87859dc
+  - enabled: 1
+    path: Assets/Scenes/Tutorial/Tutorial3.unity
+    guid: 537cb1bed3e3a0c4ca99088239b234df
+  - enabled: 1
+    path: Assets/Scenes/Tutorial/Tutorial4.unity
+    guid: e804c10a7cc6cf24da990d4545dc752d
+  - enabled: 1
+    path: Assets/Scenes/Tutorial/Tutorial5.unity
+    guid: 7624149cb20a46348aef88c1231d8cd3
+  - enabled: 1
+    path: Assets/Scenes/Tutorial/TutorialFinal.unity
+    guid: 198552fd3231dc34eb993e8646cd6797
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 65a4de7601d84d247abfcd99d51363d1,
       type: 2}
