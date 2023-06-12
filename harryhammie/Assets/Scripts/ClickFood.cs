@@ -11,7 +11,7 @@ public class ClickFood : MonoBehaviour
     private GameObject Options;
 
     public GameObject Hungerbar;
-    public Slider slidertwotoo;
+    public Slider Slider;
 
     int feed = 0;
     //24-05- C: Have to add a boolean so I can detect when the function gets activated
