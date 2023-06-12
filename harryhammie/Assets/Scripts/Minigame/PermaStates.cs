@@ -34,6 +34,8 @@ public class PermaStates : ScriptableObject
     public bool baking;
 
 
+    //coupons
+
 
 }
 

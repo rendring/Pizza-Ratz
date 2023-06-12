@@ -34,7 +34,7 @@ public class BarValue : MonoBehaviour
 
 
 
-        if (Hunger.GetComponent<hungerControl>().FeedActive && Hunger.GetComponent<HungerBar>().timeSlider.value < 80)
+        if (Hunger.GetComponent<ClickFood>().FeedActive && Hunger.GetComponent<HungerBar>().timeSlider.value < 80)
         {
             //I tried adding it so you can't spam the animation and it kind of works so i'm keeping it in -C
             if (NoSpam == false)
@@ -46,7 +46,7 @@ public class BarValue : MonoBehaviour
             
                 Exp = Exp * PointModifierHu;
                 CouponBar.value = (float)(CouponBar.value + Exp);
-                Hunger.GetComponent<hungerControl>().FeedActive = false;
+                Hunger.GetComponent<ClickFood>().FeedActive = false;
                 Debug.Log(PointModifierHu);
            
             
