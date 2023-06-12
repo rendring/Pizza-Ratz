@@ -15,3 +15,12 @@ MonoBehaviour:
   SuperAwesomeHighScore: 0
   SuperDuperAwesomeHighScore: 0
   CouponBarProgression: 0
+  produce: 1
+  others: 1
+  meat: 1
+  dairy: 1
+  vegan: 1
+  cannedFood: 1
+  beverages: 1
+  bakery: 1
+  baking: 1
