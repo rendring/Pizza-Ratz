@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class HungerBar : MonoBehaviour
 {
+
+    public Bar bar;
     // Reducing hunger needs based on game
     // 7/5/23: Ren H- the following variables com from the Time Manager Script
     public float gameHourTime;
