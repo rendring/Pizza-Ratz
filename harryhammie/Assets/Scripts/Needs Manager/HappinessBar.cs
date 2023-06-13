@@ -11,15 +11,20 @@ public class HappinessBar : MonoBehaviour
     public float hourLenght;
     public Slider timeSlider;
 
+    public PermaStates LeHappyS;
+
     //public float gameHourTime;
 
-   // private bool stopTimer;
+    // private bool stopTimer;
 
     void Start()
     {
         //stopTimer = false;
        // timeSlider.maxValue = gameHourTime;
+        
+        gameHourTime = LeHappyS.HappinessBarSlider;
         timeSlider.value = gameHourTime;
+        timeSlider.value = LeHappyS.HappinessBarSlider;
     }
 
     // Update is called once per frame
@@ -29,7 +34,8 @@ public class HappinessBar : MonoBehaviour
 
         gameHourTime -= Time.deltaTime;
         timeSlider.value = gameHourTime;
-     
+
+        LeHappyS.HappinessBarSlider = timeSlider.value;
 
         int minutes = Mathf.FloorToInt(time / 60);
         int seconds = Mathf.FloorToInt(time - minutes * 60f);

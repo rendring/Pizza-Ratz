@@ -9,6 +9,7 @@ TagManager:
   - LevelSuccesTag
   - Death
   - Koopzegel
+  - Food
   layers:
   - Default
   - TransparentFX

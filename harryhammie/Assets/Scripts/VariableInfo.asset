@@ -24,3 +24,6 @@ MonoBehaviour:
   beverages: 1
   bakery: 1
   baking: 1
+  HungerBarSlider: 51.116177
+  HygieneBarSlider: 29.116215
+  HappinessBarSlider: 9.116056

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 963 1755">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        fill: #f15a24;
+      }
+
+      .cls-3 {
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 49px;
+      }
+
+      .cls-4, .cls-5 {
+        opacity: .75;
+      }
+
+      .cls-5 {
+        fill: #29abe2;
+      }
+
+      .cls-6 {
+        letter-spacing: -.08em;
+      }
+    </style>
+  </defs>
+  <g class="cls-4">
+    <rect class="cls-2" width="963" height="1755" rx="97.91" ry="97.91"/>
+  </g>
+  <text class="cls-3" transform="translate(110.43 161.91)"><tspan class="cls-6" x="0" y="0">Y</tspan><tspan x="22.78" y="0">ou gained a </tspan><tspan class="cls-1" x="273.32" y="0">c</tspan><tspan x="294.98" y="0">oupon! Choose wisely!</tspan></text>
+  <rect class="cls-5" x="106" y="232" width="752" height="373" rx="73.8" ry="73.8"/>
+  <rect class="cls-5" x="106" y="685" width="752" height="373" rx="73.8" ry="73.8"/>
+  <rect class="cls-5" x="106" y="1150" width="752" height="373" rx="73.8" ry="73.8"/>
+</svg>

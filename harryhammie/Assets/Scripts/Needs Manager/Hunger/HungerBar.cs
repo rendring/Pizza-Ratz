@@ -11,15 +11,23 @@ public class HungerBar : MonoBehaviour
     public float hourLenght;
     public Slider timeSlider;
 
+    public PermaStates HungerBarS;
+
     //public float gameHourTime;
 
    // private bool stopTimer;
 
     void Start()
     {
+
+       
         //stopTimer = false;
        // timeSlider.maxValue = gameHourTime;
+
+        gameHourTime = HungerBarS.HungerBarSlider;
         timeSlider.value = gameHourTime;
+        timeSlider.value = HungerBarS.HungerBarSlider;
+        
     }
 
     // Update is called once per frame
@@ -29,7 +37,8 @@ public class HungerBar : MonoBehaviour
 
         gameHourTime -= Time.deltaTime;
         timeSlider.value = gameHourTime;
-     
+
+        HungerBarS.HungerBarSlider = timeSlider.value;
 
         int minutes = Mathf.FloorToInt(time / 60);
         int seconds = Mathf.FloorToInt(time - minutes * 60f);

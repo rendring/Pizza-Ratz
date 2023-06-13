@@ -33,8 +33,14 @@ public class PermaStates : ScriptableObject
 
     public bool baking;
 
+   
 
-    //coupons
+    //feeling bars
+    public float HungerBarSlider;
+
+    public float HygieneBarSlider;
+
+    public float HappinessBarSlider;
 
 
 }

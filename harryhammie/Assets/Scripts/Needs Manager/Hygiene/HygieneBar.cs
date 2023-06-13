@@ -11,9 +11,13 @@ public class HygieneBar : MonoBehaviour
     public float hourLenght;
     public Slider timeSlider;
 
+    public PermaStates HygieneBarS;
+
     void Start()
     {
+        gameHourTime = HygieneBarS.HygieneBarSlider;
         timeSlider.value = gameHourTime;
+        timeSlider.value = HygieneBarS.HygieneBarSlider;
     }
 
     // Update is called once per frame
@@ -23,6 +27,8 @@ public class HygieneBar : MonoBehaviour
 
         gameHourTime -= Time.deltaTime;
         timeSlider.value = gameHourTime;
+
+        HygieneBarS.HygieneBarSlider = timeSlider.value;
 
         int minutes = Mathf.FloorToInt(time / 60);
         int seconds = Mathf.FloorToInt(time - minutes * 60f);
